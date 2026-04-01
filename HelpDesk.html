@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help Desk</title>
+</head>
+<body>
+    <a href="https://www.swinburne.edu.au/"><img src="./swin_logo.png"  alt="Swinburne logo" loading="lazy"></a>
+    <h1> HWA Help Desk appointment </h1>
+    <p>Help Desk is located in ATC620.open 10:30 to 19:00 Monday to Friday</p>
+    <p>Check Blackboard for when CWA tutor will be there.</p>
+     
+    <!-- Student details -->
+    <fieldset>
+    <legend>Student details</legend>
+
+    Student ID:
+    <input type="text" id="Student ID" name="Student ID" pattern="\d(7,10)" required>
+    <br><br>
+
+    Given Name:
+    <input type="text" id="Given Name" patter="[a-zA-Z]{1,15}" required>
+
+    Family Name:
+    <input type="text" id="Family Name" name="Family Name" pattern="[a-zA-Z]{1,15}" required>
+
+</fieldset>
+<!-- Your unit -->
+<fieldset>
+    <legend>Your unit</legend>
+
+    <input type="radio" name="unit">COS10011 
+    <input type="radio" name="unit">COS60004 
+    <input type="radio" name="unit"> COS60007
+    <br><br>
+
+    Your Tutor:
+    <select>
+        <option>Please Select</option>
+        <option>Tutor 1</option>
+        <option>Tutor 2</option>
+        <option>Tutor 3</option>
+    </select>
+
+</fieldset>
+<!-- Issue -->
+<fieldset>
+            <legend>Issue</legend>
+            <label for="HTML">HTML</label>
+            <input type="checkbox" id="HTML" name="issue" value="HTML" checked="checked" />
+            <label for="CSS">CSS</label>
+            <input type="checkbox" id="CSS" name="issue" value="CSS" />
+            <label for="JavaScript">JavaScript</label>
+            <input type="checkbox" id="JavaScript" name="issue" value="JavaScript" />
+            <label for="PHP">PHP</label>
+            <input type="checkbox" id="PHP" name="issue" value="PHP" />
+            <label for="MySQL">MySQL</label>
+            <input type="checkbox" id="MySQL" name="issue" value="MySQL" />
+            <br><br>
+
+            <label for="">Description of Issue</label><br>
+            <textarea rows="5" cols="40" placeholder="Write description of your problem here..."></textarea>
+        </fieldset>
+<!-- Date and Time -->
+        <fieldset>
+            <legend>Preferred Date/Time</legend>
+            <label for="Date">Date</label>
+            <input type="text" id="Date" name="Date" placeholder="dd/mm/yyyy" pattern="\d{2}/\d{2}/\d{4}"><br>
+            <!-- <input type="date" placeholder="dd/mm/yyyy"><br> -->
+             
+            <label for="Time">Time</label>
+            <input type="text" id="Time" name="Time" placeholder="00:00" pattern="\d{2}:\d{2}"><br>
+            <!-- <input type="time" placeholder="00:00"> -->
+
+        </fieldset>
+
+<br>
+
+<input type="submit" value="Book">
+<input type="reset" value="Reset form">
+</body>
+</html>
